@@ -19,7 +19,14 @@ body {
 
 ul li {
   list-style-type: none;
+  padding-left: 10px;
 }
-.hover {
+ul li:hover {
   background: rgba(218, 117, 9, 0.66);
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  unicode-bidi: isolate;
 }

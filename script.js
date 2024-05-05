@@ -107,14 +107,11 @@ function showSuggestions(results, inputVal) {
     //I had suggestions add the following 3 event listeners, but it made it so
     //The user could click on the outer box to add all entries of results.
     newLi.addEventListener("click", useSuggestion);
-    newLi.addEventListener("mouseover", hover);
-    newLi.addEventListener("mouseout", hover);
+    //newLi.addEventListener("mouseover", hover);
+    //newLi.addEventListener("mouseout", hover);
     suggestions.appendChild(newLi);
   });
 }
-
-//Thought I'd use some arrow functions
-const hover = (e) => e.target.classList.toggle("hover");
 
 function useSuggestion(e) {
   input.value = e.target.innerText;
